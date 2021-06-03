@@ -7,19 +7,17 @@
 			let selectedEngine = document.querySelector("input[name=engine]:checked").value;
 
 			let actions = {
-				"google": "https://www.google.com/",
+				"google": "https://www.google.com/search",
 				"duckDuckGo": "https://duckduckgo.com/",
 				"bing": "https://www.bing.com/",
-				"ask": "https://www.ask.com/"
+				"ask": "https://www.ask.com/web"
 			};
 
 			// Set action URL to correct search engine
 			form.setAttribute("action", actions[selectedEngine]);
-			// Alternative: form.action = actions[selectedEngine];
-
 		}
 
-		// Submit event handler
+		// Event handler for submit
 		window.addEventListener("load", function () {
 			form = document.querySelector("form");
 			form.addEventListener("submit", setSearchEngine);
