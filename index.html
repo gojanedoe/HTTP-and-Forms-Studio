@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <head>
 	<meta charset="utf-8">
@@ -20,10 +20,22 @@
 			form.setAttribute("action", actions[selectedEngine]);
 		}
 
-		// Event handler for submit
 		window.addEventListener("load", function () {
+
+			// Event handler for submit
 			form = document.querySelector("form");
-			form.addEventListener("submit", setSearchEngine);
+			form.addEventListener("submit", function (event) {
+				let radioInput = document.querySelector("input[name=engine]:checked");
+				let textSubmission = document.querySelector("input[name=q]");
+
+				// Validate that all input fields are filled
+				if (radioInput === null || textSubmission.value === "") {
+					alert("All inputs are required.");
+					event.preventDefault();
+				} else {
+					setSearchEngine();
+				}
+			});
 		});
 	</script>
 </head>
