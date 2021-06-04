@@ -1,11 +1,7 @@
 body {
-    margin: 0;
     height: 100vh;
     position: relative;
-
     background-color: rgb(247, 81, 39);
-    font-family: 'Cutive Mono', monospace;
-    /* f*/
 }
 
 div {
@@ -44,14 +40,11 @@ label {
 input[type=text] {
     margin-bottom: 5px;
     margin-top: 15px;
+    font-family: 'Cutive Mono', monospace;
 }
 
 input[type=submit] {
-    /* margin-top: 20px; */
-    /* text-align: center; */
-    /* margin: 0; */
     position: absolute;
-    /* top: 50%; */
     margin-top: 14px;
     left: 50%;
     transform: translate(-50%, 0);
@@ -61,7 +54,6 @@ input[type=submit] {
     border: 1px solid black;
 }
 
-/* SHADOWS */
 div, input[type=submit]  {
     filter: drop-shadow(20px 20px 0.75rem rgb(146, 48, 23));
     font-family: 'Cutive Mono', monospace;
