@@ -2,6 +2,9 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Roboto+Mono&display=swap" rel="stylesheet">
 	<script>
 		function setSearchEngine() {
 			let selectedEngine = document.querySelector("input[name=engine]:checked").value;
@@ -26,22 +29,23 @@
 </head>
 
 <body>
-
-	<form id="searchForm">
-		<input type="text" name="q" />
-		<label> Google
-			<input type="radio" name="engine" value="google" />
-		</label>
-		<label> DuckDuckGo
-			<input type="radio" name="engine" value="duckDuckGo" />
-		</label>
-		<label> Bing
-			<input type="radio" name="engine" value="bing" />
-		</label>
-		<label> Ask
-			<input type="radio" name="engine" value="ask" />
-		</label>
-		<input type="submit" value="Go!" />
-	</form>
-
+	<div>
+		<h1>Search</h1>
+		<form id="searchForm">
+			<input type="text" name="q" />
+			<label> Google
+				<input type="radio" name="engine" value="google" />
+			</label>
+			<label> DuckDuckGo
+				<input type="radio" name="engine" value="duckDuckGo" />
+			</label>
+			<label> Bing
+				<input type="radio" name="engine" value="bing" />
+			</label>
+			<label> Ask
+				<input type="radio" name="engine" value="ask" />
+			</label>
+			<input type="submit" value="Go!" />
+		</form>
+	</div>
 </body>
